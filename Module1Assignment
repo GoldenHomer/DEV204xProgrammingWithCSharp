@@ -3,9 +3,16 @@ using System;
 namespace Module1 {
   class Info {
     static void Main(string[] args) {
+      // I'll declare the references first.
       string firstName;
       string lastName;
       DateTime birthday;
+      string addressLine1;
+      string addressLine2;
+      string city;
+      string state;
+      int zip;
+      string country;
     }
   }
 }

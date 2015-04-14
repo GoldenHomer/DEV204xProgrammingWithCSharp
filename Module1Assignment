@@ -1,18 +1,31 @@
 using System;
 
 namespace Module1 {
-  class Info {
-    static void Main(string[] args) {
-      // I'll declare the references first.
-      string firstName;
-      string lastName;
-      DateTime birthday;
+  class Student {
+      string studentFirst;
+      string studentLast;
+      DateTime studentBirthday;
       string addressLine1;
       string addressLine2;
       string city;
       string state;
       int zip;
       string country;
-    }
+  }
+  
+  class Prof {
+    string profFirst;
+    string profLast;
+    DateTime profBirth;
+    string profAddress1;
+    string profAddress2;
+    string profCity;
+    string profState;
+    int profZip;
+    string profCountry
+  }
+  
+  static void Main(string[] args) {
+    // Print to console here
   }
 }

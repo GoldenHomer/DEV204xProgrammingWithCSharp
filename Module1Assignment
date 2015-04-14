@@ -13,7 +13,7 @@ namespace Module1 {
       string country;
   }
   
-  class Prof {
+  class Professor {
     string profFirst;
     string profLast;
     DateTime profBirth;
@@ -23,6 +23,14 @@ namespace Module1 {
     string profState;
     int profZip;
     string profCountry
+  }
+  
+  class Degree {
+  
+  }
+  
+  class DegreeProgram {
+  
   }
   
   static void Main(string[] args) {

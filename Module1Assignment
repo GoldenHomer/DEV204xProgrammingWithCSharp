@@ -26,11 +26,15 @@ namespace Module1 {
   }
   
   class Degree {
-    // Paying for something that won't get you a job.
+    string typeOfDegree;
+    string degreeName;
+    int creditsRequired;
   }
   
   class DegreeProgram {
-  
+    string programName;
+    string offeredDegrees;
+    string programAdmin;
   }
   
   static void Main(string[] args) {

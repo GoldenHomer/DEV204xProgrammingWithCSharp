@@ -38,6 +38,7 @@ namespace Module1 {
   }
   
   static void Main(string[] args) {
+    // Accept input from user  
     // Print to console here
   }
 }

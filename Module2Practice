@@ -50,6 +50,8 @@ namespace WhileStatement
                 source.Text += line + '\n';
                 line = reader.ReadLine();
             }
+            
+            reader.Dispose(); // Release any resources associated with opening a file and close it. Good practice.
         }
     }
 }

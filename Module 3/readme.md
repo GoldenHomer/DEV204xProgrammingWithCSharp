@@ -1,1 +1,1 @@
-using ref requires initialized variable.
+using ref requires initialized variable while using out does not.

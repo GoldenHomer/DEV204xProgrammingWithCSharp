@@ -60,6 +60,10 @@ namespace MathsOperators
                 result.Text = msg;
                 Console.WriteLine(result.Text);
             }
+            
+            catch {
+                InvalidOperationException("No operator was selected buddy.");
+            }
         }
 
         private void addValues()
@@ -77,6 +81,10 @@ namespace MathsOperators
             catch {
                 result.Text = FormatException("Cannot use a string as int");
                 Console.WriteLine(result.Text);
+            }
+            
+            catch {
+                InvalidOperationException("No operator was selected buddy.");
             }
         }
 

@@ -26,26 +26,39 @@ namespace MathsOperators
         }
 
         private void calculateClick(object sender, RoutedEventArgs e)
-        {
-            if ((bool)addition.IsChecked)
-            {
-                addValues();
+        {   
+            try {
+                if ((bool)addition.IsChecked)
+                {
+                    addValues();
+                }
+                else if ((bool)subtraction.IsChecked)
+                {
+                    subtractValues();
+                }
+                else if ((bool)multiplication.IsChecked)
+                {
+                    multiplyValues();
+                }
+                else if ((bool)division.IsChecked)
+                {
+                    divideValues();
+                }
+                else if ((bool)remainder.IsChecked)
+                {
+                    remainderValues();
+                }
+                else {
+                    throw {
+                        InvalidOperationException("No operator was selected buddy.");
+                    }
+                }
             }
-            else if ((bool)subtraction.IsChecked)
-            {
-                subtractValues();
-            }
-            else if ((bool)multiplication.IsChecked)
-            {
-                multiplyValues();
-            }
-            else if ((bool)division.IsChecked)
-            {
-                divideValues();
-            }
-            else if ((bool)remainder.IsChecked)
-            {
-                remainderValues();
+            
+            catch {
+                string msg = FormatException();
+                result.Text = msg;
+                Console.WriteLine(result.Text);
             }
         }
 
@@ -62,8 +75,7 @@ namespace MathsOperators
             }
             
             catch {
-                string msg = FormatException();
-                result.Text = msg;
+                result.Text = FormatException("Cannot use a string as int");
                 Console.WriteLine(result.Text);
             }
         }

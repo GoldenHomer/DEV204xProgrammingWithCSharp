@@ -48,7 +48,9 @@ namespace Program {
   
   static void GetProfInfo() {
     Console.WriteLine("Enter the professor's first name: ");
-      string firstProfName = Console.ReadLine();
+    string firstProfName = Console.ReadLine();
+    Console.WriteLine("Enter last name of professor: ");
+    string lastProfName = Console.ReadLine();
   }
   static void PrintProfDetails(string first, string) {
     

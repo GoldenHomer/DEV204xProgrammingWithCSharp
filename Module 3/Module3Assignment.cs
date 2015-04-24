@@ -22,15 +22,39 @@ namespace Program {
       
       Console.WriteLine("Enter student's birthday: ");
       DateTime studentBirthday = Console.ReadLine();
-      string addressLine1;
-      string addressLine2;
-      string city;
-      string state;
+      
+      Console.WriteLine("Enter address, Line 1");
+      string addressLine1 = Console.ReadLine();
+      
+      Console.WriteLine("Enter address, line 2");
+      string addressLine2 = Console.ReadLine();
+      
+      Console.WriteLine("Enter city: ");
+      string city = Console.ReadLine();
+      
+      Console.WriteLine("Enter state: ")
+      string state = Console.ReadLine();
+      
+      Console.WriteLine("Enter zipcode: ");
       int zip;
+      
+      Console.WriteLine("Enter country: ");
       string country;
   }
 
   static void PrintStudentDetails(string first, string last, string birthday) {
     Console.WriteLine("{0} {1} was born on: {2}", first, last, birthday);
+  }
+  
+  static void GetProfInfo() {
+    Console.WriteLine("Enter the professor's first name: ");
+      string firstProfName = Console.ReadLine();
+  }
+  static void PrintProfDetails(string first, string) {
+    
+  }
+  
+  static void Main(string[] args) {
+    
   }
 }

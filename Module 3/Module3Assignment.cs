@@ -41,10 +41,15 @@ namespace Program {
       Console.WriteLine("Enter country: ");
       string country;
   }
+  
+  static void ValidateBirthday(){
+    NotImplementedException("Could not validate birthday.");
+  }
 
   static void PrintStudentDetails(string first, string last, string birthday) {
     Console.WriteLine("{0} {1} was born on: {2}", first, last, birthday);
   }
+  
   
   static void GetProfInfo() {
     Console.WriteLine("Enter the professor's first name: ");
@@ -54,11 +59,11 @@ namespace Program {
     Console.WriteLine("Enter birthday: ");
     DateTime profBirth = Console.ReadLine();
   }
-  static void PrintProfDetails(string first, string) {
-    
+  static void Print ProfDetails(string last, string degree, string school) {
+    Console.WriteLine("Dr. {0} received a {1} from {2}", last, degree, school);
   }
   
   static void Main(string[] args) {
-    
+    ValidateBirthday();
   }
 }

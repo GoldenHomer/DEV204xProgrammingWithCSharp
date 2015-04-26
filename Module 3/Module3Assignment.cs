@@ -51,6 +51,8 @@ namespace Program {
     string firstProfName = Console.ReadLine();
     Console.WriteLine("Enter last name of professor: ");
     string lastProfName = Console.ReadLine();
+    Console.WriteLine("Enter birthday: ");
+    DateTime profBirth = Console.ReadLine();
   }
   static void PrintProfDetails(string first, string) {
     

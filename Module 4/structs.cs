@@ -17,8 +17,19 @@ public namespace Program {
       Numbers[i] = i;
     }
     
-    while(i < Numbers.Length) {
+    int index = 0;
+    while (index < Numbers.Length) {
       Console.WriteLine("Element in index {0} of Numbers array is {1}", i, Numbers[i]);
+      index++;
     }
+    
+    string[] SecondArray = new string[10] {"California", "Is", "A","Great","State", "To", "Live", "In", "Said", "Pinocchio"};
+    
+    int obama = 0;
+    int dirt = SecondArray.Length;
+    while(obama < dirt) {
+      Console.WriteLine("{0}", SecondArray[obama]);
+    }
+    // I think the enum method is easier and more intuitive to use.
   }
 }

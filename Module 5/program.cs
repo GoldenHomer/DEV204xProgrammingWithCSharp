@@ -12,7 +12,7 @@ namespace Classes
     {
         static void doWork()
         {
-         
+            Point origin = new Point();
         }
 
         static void Main(string[] args)
@@ -25,6 +25,8 @@ namespace Classes
             {
                 Console.WriteLine(ex.Message);
             }
+            
+            Point bottomRight = new Point(1366, 768);
         }
     }
 }

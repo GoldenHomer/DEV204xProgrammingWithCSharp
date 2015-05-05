@@ -13,6 +13,8 @@ namespace Classes
         static void doWork()
         {
             Point origin = new Point();
+            Point coord1 = new Point();
+            Point coord2 = new Point();
         }
 
         static void Main(string[] args)

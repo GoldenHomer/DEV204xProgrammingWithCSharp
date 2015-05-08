@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 
-public class Program
+public class student
 {
 	public Student
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+		static string studentsEnrolled;
+		// I need to somehow figure out to increment studentsEnrolled everything a student instance is created.
 	}
 }

@@ -8,6 +8,8 @@ namespace DegreeProgram {
   }
   
   static void Main(string[] args) {
-    Student Tony = new student();
+    Student Huey = new student();
+    Student Dewey = new student();
+    Student Louie = new student();
 }
 }

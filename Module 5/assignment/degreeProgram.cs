@@ -6,4 +6,8 @@ namespace DegreeProgram {
     string offeredDegree;
     string programAdmin;
   }
+  
+  static void Main(string[] args) {
+    Student Tony = new student();
+}
 }

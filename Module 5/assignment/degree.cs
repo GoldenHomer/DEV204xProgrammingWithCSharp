@@ -5,5 +5,6 @@ namespace Degree {
     string typeOfDegree;
     string degreeName;
     int creditsRequired;
+    string course;
   }
 }

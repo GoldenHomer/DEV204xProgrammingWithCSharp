@@ -24,7 +24,7 @@ public class student {
   string city;
   string state;
   int zip;
-	static string studentsEnrolled;
+  static int studentsEnrolled;
 }
 
 public class Professor {
@@ -52,6 +52,7 @@ public class Professor {
     Student Dewey;
     Student Louie;
     Professor Munsley;
+    // Need a way to increment when a new Student is instanciated.
   }
 
 class Program {  

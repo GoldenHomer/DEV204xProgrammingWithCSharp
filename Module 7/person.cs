@@ -12,14 +12,6 @@ namespace Person
           string height;
           string birthday;
           
-          Student Huey = new student();
-          Student Dewey = new student();
-          Student Louie = new student();
-          
-          Student Huey.firstName = "Huey";
-          Student Dewey.firstName = "Dewey";
-          Student Dewey.firstName = "Louie";
-          
           Course ProgrammingWithC# = new Course();
           ProgrammingWithC#.name = "Programming with C#";
           
@@ -58,9 +50,15 @@ namespace Person
     }
     
     public class Stack {
-      Student Lucky = new Student();
-      Student Dusty = new Student();
-      Student Ned = new Student();
+        Student Huey = new student();
+        Student Dewey = new student();
+        Student Louie = new student();
+          
+        Student Huey.firstName = "Huey";
+        Student Dewey.firstName = "Dewey";
+        Student Dewey.firstName = "Louie";
+        
+        
     }
     
     Stack grades = new Stack();

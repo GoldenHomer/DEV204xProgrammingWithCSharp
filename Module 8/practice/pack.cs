@@ -42,8 +42,9 @@ namespace Cards
 	                value = (Value)randomCardSelector.Next(CardsPerSuit);
 	            }
 	
-	            PlayingCard card = this.cardPack[(int)suit, (int)value];
-	            this.cardPack[(int)suit, (int)value] = null;
+	            List<PlayingCard> cardsInSuit = this.cardPack[suit]; 
+           	    PlayingCard card = cardsInSuit.Find(c => c.CardValue == value);
+           	    cardsInSuit.Remove(card);
 	            return card;
 	        }
 	
@@ -63,7 +64,8 @@ namespace Cards
 	
 	        private bool IsCardAlreadyDealt(Suit suit, Value value)
 	        {
-	            return (this.cardPack[(int)suit, (int)value] == null);
+	            List<PlayingCard> cardsInSuit = this.cardPack[suit]; 
+       		    return (!cardsInSuit.Exists(c => c.CardSuit == suit && c.CardValue == value));
 	        }
 	}
 }

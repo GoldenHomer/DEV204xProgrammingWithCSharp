@@ -60,8 +60,8 @@ namespace Person
         
         
     }
-    
-    Stack grades = new Stack();
+    List<Stack> grades = new List<Stack>();
+    grades.Add(new Stack() {grade=85});
   }
   
   class Professor:Person {
@@ -95,7 +95,7 @@ namespace Person
             int courseNumber;
             string days;
             string start;
-            ArrayList Students = new ArrayList();
+            List<Student> students = new List<Student>();
             string[] instructors = new string[3];
             
             Professor Munsley;

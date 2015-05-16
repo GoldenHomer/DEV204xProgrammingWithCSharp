@@ -60,8 +60,12 @@ namespace Person
         
         
     }
-    List<Stack> grades = new List<Stack>();
-    grades.Add(new Stack() {grade=85});
+    Stack<int> grades = new Stack<int>();
+    grades.Push(95);
+    grades.Push(77);
+    grades.Push(82);
+    grades.Push(89);
+    grades.Push(97);
   }
   
   class Professor:Person {
@@ -101,13 +105,13 @@ namespace Person
             Professor Munsley;
             // Need a way to increment when a new Student is instanciated.
             
-            // Adding students to array list
+            // Adding students to list
             students.Add(Huey);
             students.Add(Dewey);
             students.Add(Louie);
             
             public void ListStudents(){
-              foreach (student element in Students) {
+              foreach (Student student in students) {
                 Console.WriteLine("Student's first name is {0}", student.firstName);
               }
             }

@@ -23,6 +23,26 @@ namespace Mod_9_Homework
         public MainWindow()
         {
             InitializeComponent();
+            
+            public class Student {
+                string firstName;
+                string lastName;
+                string birth;
+            }
+            
+            List<Student> students = new List<Student>;
+            
+            void CreateStudentAddToListBtn_Click(Object sender, EventArgs e)
+            {
+                // When the button is clicked, create Student object and add to List.
+        
+                Button clickedButton = (Button)sender;
+                
+                //After the creation and submission, clear content of text boxes
+                textbox1.Text = "";
+                textbox2.Text = "";
+                textbox3.Text = "";
+            }
         }
     }
 }

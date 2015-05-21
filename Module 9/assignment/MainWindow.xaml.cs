@@ -42,6 +42,8 @@ namespace Mod_9_Homework
                 textbox1.Text = "";
                 textbox2.Text = "";
                 textbox3.Text = "";
+                
+                //submit
             }
         }
     }
